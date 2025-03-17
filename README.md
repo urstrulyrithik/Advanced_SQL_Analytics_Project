@@ -1,24 +1,12 @@
-# Advanced_SQL_Analytics_Project
-
+# Advanced SQL Project
 
 ## Overview
 This repository contains a collection of advanced SQL scripts designed to perform comprehensive data analysis and generate insightful key performance indicators (KPIs). The project demonstrates various advanced SQL techniques including data segmentation, performance analysis, cumulative analysis, part-to-whole analysis, and more.
 
-## Project Description
-The scripts in this repository are aimed at exploring, analyzing, and reporting on business metrics using a sample data warehouse. The key functionalities include:
-
-- **KPI Building:** Generating meaningful performance indicators through data aggregation.
-- **Data Segmentation:** Classifying and segmenting data based on customer demographics and purchase behavior.
-- **Product Reporting:** Creating detailed reports on product performance, covering sales figures, order counts, and customer metrics.
-- **Cumulative Analysis:** Analyzing trends over time with cumulative metrics.
-- **Database Exploration:** Investigating the underlying database schema and relationships.
-- **Part-To-Whole Analysis:** Evaluating how individual segments contribute to overall performance.
-- **Performance Analysis:** Assessing query efficiency and overall system performance.
-
-# Repository Structure
+## Repository Structure
 
 - **datasets** 📂  
-  Contains all the datasets used in the project (e.g., CSV, JSON files, etc.).
+  Contains all the datasets used in the project.
 
 - **scripts** 💻  
   Contains all the SQL scripts used in the project:
@@ -37,20 +25,45 @@ The scripts in this repository are aimed at exploring, analyzing, and reporting 
   - **⚡ Performance_Analysis.sql**  
     *Script for analyzing query and system performance.*
 
-- **README.md** 📖  
-  *This file.*
+- **_init_database.sql** 🔧  
+  *Script to pull the datasets into your system.  
+  **Important:** You must update the file with the correct path to the location where you downloaded your datasets.*
 
+# Getting Started
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 - A SQL database environment (e.g., Microsoft SQL Server, PostgreSQL, MySQL) with the necessary schema and sample data.
 - Basic knowledge of SQL and database concepts.
 - Optional: SQL client tools (e.g., SQL Server Management Studio, DBeaver, pgAdmin) to run and test the scripts.
 
-### Installation
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/urstrulyrithik/Advanced_SQL_Analytics_Project
+## Clone the Repository
+```bash
+git clone https://github.com/urstrulyrithik/Advanced_SQL_Analytics_Project.git
+```
+## Setup & Usage Instructions
 
+### Download Datasets
+- Place the datasets into the **datasets** folder or download them as instructed.
+
+### Initialize the Database
+1. Open the **_init_database.sql** file.
+2. Update the file with the correct path to where your datasets are stored.
+3. Run the script to pull the datasets into your database system.
+
+### Execute the Scripts
+- Use your preferred SQL client tool to connect to your database instance.
+- Run the scripts from the **scripts** folder individually in the order that suits your analysis needs.
+
+### Usage
+- **Build_KPIs.sql:** Computes essential KPIs to provide insights into overall business performance.
+- **Data_Segmentation.sql:** Segments customers or data entries based on criteria such as age groups and purchase behavior.
+- **Product_Report_KPIs.sql:** Generates product-specific reports covering sales, order metrics, and customer data.
+- **Cumulative_Analysis.sql:** Analyzes cumulative data over time to identify trends and growth patterns.
+- **Database_Exploration.sql:** Explores the database schema and relationships between various tables.
+- **Part_To_Whole_Analysis.sql:** Evaluates the contribution of different segments to the overall metrics.
+- **Performance_Analysis.sql:** Assesses the performance of your queries and database setup.
+
+## Conclusion
+
+By following the steps outlined in this repository, you can seamlessly integrate datasets into your database, explore various advanced SQL techniques, and derive meaningful insights from your data. I hope these scripts serve as a valuable resource for building, analyzing, and reporting key performance indicators in your own projects. If you have any questions, suggestions, or improvements, feel free to open an issue or submit a pull request. Happy querying!
 
